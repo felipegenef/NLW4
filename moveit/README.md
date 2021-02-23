@@ -84,7 +84,6 @@ Para utilizar fontes do goolge entramos no site de google fonts e procuramos pel
 <p>
 Criamos uma pasta chamada styles e dentro um arquivo css onde setamos alguns parametros globais para nossa aplicação. Dentre eles estava que todos os componentes teriam margem e padding 0 por default e que a cor de fundo do nosso body seria #f2f3f5
 </p>
-<img src="./README_ASSETS/fonts.png" width="100%">
 <h2>Responsividade</h2>
 <p>
 para responsividade, setamos o padrão da fonte da nossa aplicação para 1rem (16 px por padrão), e colocamos @medias para que quando nossas telas diminuam de tamanho, as fontes se adaptem diminuindo 1px. Quando utilizamos rem , quando o tamanho da tela diminui , todos os componentes diminuem junto, fazendo assim com que nosso app seja extremamente responsivo.
