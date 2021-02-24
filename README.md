@@ -55,7 +55,7 @@ São as "Tags HTML" do react. Com  elas por meio do REACT DOM o react consegue c
 </p>
 <h3>Propriedades(Props)</h3>
 <p>
-são as caracteristicas de cada componente que podem ser enviadas do componente pai que os chama. São passadas via parametro na função do componentes como mostram as imagens abaixo.
+São as caracteristicas de cada componente que podem ser enviadas do componente pai. São passadas via parametro na função como mostram as imagens abaixo.
 </p>
 <img src="./moveit-next/README_ASSETS/props.png" width="100%">
 <img src="./moveit-next/README_ASSETS/props2.png" width="100%">
@@ -67,12 +67,12 @@ Declaração de props default do react que surge quando se passa um parâmetro d
 <img src="./moveit-next/README_ASSETS/children2.png" width="100%">
 <h2>Estado</h2>
 <p>
-É a "memória" de um componente. Quando um componente precisa guardar dados e propriedades dinâmicas sobre si mesmo, é necessário utilizar estado. 
+É a "memória" de um componente. É necessário utilizar estado quando um componente precisa guardar dados e propriedades dinâmicas sobre si mesmo. 
 </p>
 <h3>Manipular estado(HOOKS)</h3>
 <h4>useState</h4>
 <p>
-É o como fazemos para mudar o estado de um componente. No exemplo abaixo fizemos um contador e uma função que utiliza do usestate para atualizar o valor de counter. Caso haja mais de uma propriedade que se deseja mudar, pode-se utilizar um objeto no lugar do numero  counter e colocar varias propriedades modificando somente as propriedades desse objeto que se deseja.
+É o como fazemos para mudar o estado de um componente. No exemplo abaixo fizemos um contador e uma função que utiliza do useState para atualizar o valor de counter. Caso haja mais de uma propriedade que se deseja mudar, pode-se utilizar um objeto no lugar do numero  counter e colocar varias propriedades modificando somente as propriedades desse objeto que se deseja.
 </p>
 <img src="./moveit-next/README_ASSETS/usestate.png" width="100%">
 <h2>Fontes</h2>
@@ -86,7 +86,7 @@ Criamos uma pasta chamada styles e dentro um arquivo css onde setamos alguns par
 </p>
 <h2>Responsividade</h2>
 <p>
-para responsividade, setamos o padrão da fonte da nossa aplicação para 1rem (16 px por padrão), e colocamos @medias para que quando nossas telas diminuam de tamanho, as fontes se adaptem diminuindo 1px. Quando utilizamos rem , quando o tamanho da tela diminui , todos os componentes diminuem junto, fazendo assim com que nosso app seja extremamente responsivo.
+para responsividade, setamos o padrão da fonte da nossa aplicação para 1rem (16 px por padrão), e colocamos alguns  @media para que quando nossas telas diminuam de tamanho, as fontes se adaptem diminuindo 1px. Se utilizamos rem como medida, quando o tamanho da tela diminui , todos os componentes diminuem junto, fazendo assim, com que nosso app seja extremamente responsivo.
 </p>
 <img src="./moveit-next/README_ASSETS/responsividade.png" width="100%">
 <h2>Experience Bar</h2>
@@ -140,7 +140,7 @@ Arquivo em comum entre todas as páginas. Tudo que estiver declarado dentro dele
 <ul>
 <li>
 <p>
-1 Trocar extensão .js do arquivo index.js e _app.js para index.tsx ee _app.tsx
+1 Trocar extensão .js do arquivo index.js e _app.js para index.tsx e _app.tsx
 </p>
 </li>
 <li>
@@ -173,7 +173,6 @@ Arquivo em comum entre todas as páginas. Tudo que estiver declarado dentro dele
 <h3>Compelated Challenges</h3>
 <img src="./moveit-next/README_ASSETS/compleated_challenges_component.png" width="100%">
 <h3>CountDown</h3>
-<img src="./moveit-next/README_ASSETS/compleated_challenges_component.png" width="100%">
 <p>
 ContDown foi o ultimo componetne da aula 2, nele trabalhamos com estado criando um contador como mostra abaixo.
 </p>
