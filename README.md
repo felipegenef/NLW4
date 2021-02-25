@@ -181,3 +181,47 @@ ContDown foi o ultimo componetne da aula 2, nele trabalhamos com estado criando 
 A logica para o contador foi utilizando hooks como mostra abaixo
 </p>
 <img src="./moveit-next/README_ASSETS/logica_contdown.png" width="100%">
+<h1>Aula 3</h1>
+<h3>Como declarar duas classes CSS no react</h3>
+<img src="./moveit-next/README_ASSETS/2css.png" width="100%">
+<h2>Logicar restante e componentes com condicional para exibição</h2>
+<img src="./moveit-next/README_ASSETS/countdown_aula3_1.png" width="100%">
+<img src="./moveit-next/README_ASSETS/countdown_aula3_2.png" width="100%">
+<img src="./moveit-next/README_ASSETS/countdown_aula3_3.png" width="100%">
+<h3>Challenge Box</h3>
+<h3>Desafio ativo</h3>
+<img src="./moveit-next/README_ASSETS/challengeActive.png" width="100%">
+<h3>Desafio não ativo</h3>
+<img src="./moveit-next/README_ASSETS/challengeNotActive.png" width="100%">
+<h2>Abordagens intereçantes em CSS</h2>
+<h3>Repeat em grid</h3>
+<p>
+Utilizado para criar um espaçamento em colunas iguais repetidamente
+</p>
+<img src="./moveit-next/README_ASSETS/repeat.png" width="100%">
+<h3>Filter para opacidade</h3>
+<p>
+Utilizado filter para diminuir a opacidade de um componente em 10% com hover
+</p>
+<img src="./moveit-next/README_ASSETS/filter.png" width="100%">
+<h2>Context API</h2>
+<h3>Declarar contexto</h3>
+<p>
+Consiste na forma de se fazer a comunicação de um componente isolado para outro. Para isso , precisamos criar um contexto em um arquivo separado como mosta abaixo. Context API é um meo muito útil de resolver a maioria dos problemas que precisariam de REDUX.
+</p>
+<img src="./moveit-next/README_ASSETS/declarar_context.png" width="100%">
+<h3>Disponibilizar contexto globalmente</h3>
+<p>
+Para disponibilizar o contexto criado acima, precisamos embrulha-lo em nosso _app.tsx para que ele esteja disponivel em toda aplicação.
+</p>
+<img src="./moveit-next/README_ASSETS/disponibilizar_context.png" width="100%">
+<h3>Pegar context em um componente</h3>
+<p>
+Por fim agora para podermos acessar os dados do contexto precisamos importar o <strong>useContext</strong> e utilizalo para atribuir seu valor em uma variável.
+</p>
+<img src="./moveit-next/README_ASSETS/pegar_context.png" width="100%">
+<h3>Tipar contexto</h3>
+<p>
+Para que possamos ter acesso aos tipos de dados de um determinado contexto, podemos tipar seu retorno como mostrado abaixo.
+</p>
+<img src="./moveit-next/README_ASSETS/tipar_contexto.png" width="100%">
