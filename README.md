@@ -225,3 +225,25 @@ Por fim agora para podermos acessar os dados do contexto precisamos importar o <
 Para que possamos ter acesso aos tipos de dados de um determinado contexto, podemos tipar seu retorno como mostrado abaixo.
 </p>
 <img src="./moveit-next/README_ASSETS/tipar_contexto.png" width="100%">
+<h1>Aula 4</h1>
+<h2>CountDown context</h2>
+<p>
+Nesta aula, finalizamos as funcionabilidades que faltavam para passar de nível ao finalizar uma tarefa, porém, ainda não conseguimos fazer com que o botão de contador resete uma vez que se compelta uma tarefa. Por isso, decidimos passar as funções do contador para uma CONTEXT API assim como o contexto de desafios.
+</p>
+<img src="./moveit-next/README_ASSETS/counter_context2.png" width="100%">
+<p>
+Como esse contexto não era utilizado pela aplicação como um todo, e sim mais nos componentes de CountDown e de ChallengeBox, decidimos por embrulhar somente a section da pagina de home nesse contexto como mostrado abaixo.
+</p>
+<img src="./moveit-next/README_ASSETS/counter_context1.png" width="100%">
+<h2>Web Notification</h2>
+<h3>Pedir permissão</h3>
+<p>
+Para enviar notificações para o usuário, primeiro precisamos pedir permissão.
+</p>
+<img src="./moveit-next/README_ASSETS/request_notification_permition.png" width="100%">
+<p>
+Para mostrar notificação.
+</p>
+<img src="./moveit-next/README_ASSETS/show_notification.png" width="100%">
+<h3>Audio</h3>
+<img src="./moveit-next/README_ASSETS/audio.png" width="100%">

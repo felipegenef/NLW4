@@ -1,4 +1,4 @@
-import {createContext, useState,ReactNode} from 'react';
+import {createContext, useState,ReactNode, useEffect} from 'react';
 import challenges from '../../../challenges.json'
 interface ChallengesProviderProps{
     children:ReactNode
@@ -6,7 +6,7 @@ interface ChallengesProviderProps{
 interface challenge{
     type:'body'|'eye',
     description:string,
-    ammount:number
+    amount:number
 }
 interface ChallengesContextData{
         level:number,
@@ -16,7 +16,8 @@ interface ChallengesContextData{
         experienceToNextLevel:number
         levelUp:()=>void,
         resetChallenge:()=>void,
-        startNewChallenge:()=>void
+        startNewChallenge:()=>void,
+        completeChallange:()=>void
 }
 export const ChallengesContext=createContext({}as ChallengesContextData);
 
@@ -32,10 +33,49 @@ function levelUp(){
 function resetChallenge(){
     setactiveChallenge(null);
 }
+//como array esta vazio ele serve como um componnent did mount
+useEffect(() => {
+    Notification.requestPermission();
+}, [])
 function startNewChallenge(){
+
 const randomChallengeIndex=Math.floor(Math.random()*challenges.length)
 const challenge= challenges[randomChallengeIndex];
+
 setactiveChallenge(challenge);
+
+/**
+ * Se tiver permissão toca audio com a notificação.
+ */
+new Audio('/notification.mp3').play();
+/**
+ * Se tiver permissão mostra titulo com emoji e quantidade de xp do 
+ * proximo desafio, caso contrario pede permissão.
+ * 
+ */
+if(Notification.permission==='granted'){
+   new Notification('Novo desafio!',{
+        body:`Valendo ${challenge.amount}xp`,
+        icon:'/emoji2.png'
+      });
+}else{
+    Notification.requestPermission(); 
+}
+
+}
+function completeChallange(){
+    if(!activeChallenge){
+        return;
+    }
+    const {amount}=activeChallenge;
+    let finalExperience =currentExperience+amount;
+    if(finalExperience>=experienceToNextLevel){
+        finalExperience=finalExperience-experienceToNextLevel;
+        levelUp()
+    }
+    setcurrentExperience(finalExperience);
+    setactiveChallenge(null);
+    setchallengesCompleted(challengesCompleted+1);
 }
     return ( 
     <ChallengesContext.Provider 
@@ -47,7 +87,8 @@ setactiveChallenge(challenge);
         startNewChallenge,
         resetChallenge,
         activeChallenge,
-        experienceToNextLevel
+        experienceToNextLevel,
+        completeChallange
         }}>
     {children}
     </ChallengesContext.Provider>
