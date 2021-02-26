@@ -184,16 +184,16 @@ A logica para o contador foi utilizando hooks como mostra abaixo
 <h1>Aula 3</h1>
 <h3>Como declarar duas classes CSS no react</h3>
 <img src="./moveit-next/README_ASSETS/2css.png" width="100%">
-<h2>Logicar restante e componentes com condicional para exibição</h2>
+<h2>Logica restante e componentes com condicional para exibição</h2>
 <img src="./moveit-next/README_ASSETS/countdown_aula3_1.png" width="100%">
 <img src="./moveit-next/README_ASSETS/countdown_aula3_2.png" width="100%">
 <img src="./moveit-next/README_ASSETS/countdown_aula3_3.png" width="100%">
 <h3>Challenge Box</h3>
 <h3>Desafio ativo</h3>
-<img src="./moveit-next/README_ASSETS/challengeActive.png" width="100%">
-<h3>Desafio não ativo</h3>
 <img src="./moveit-next/README_ASSETS/challengeNotActive.png" width="100%">
-<h2>Abordagens intereçantes em CSS</h2>
+<h3>Desafio não ativo</h3>
+<img src="./moveit-next/README_ASSETS/challengeActive.png" width="100%">
+<h2>Abordagens interessantes em CSS</h2>
 <h3>Repeat em grid</h3>
 <p>
 Utilizado para criar um espaçamento em colunas iguais repetidamente
@@ -207,7 +207,7 @@ Utilizado filter para diminuir a opacidade de um componente em 10% com hover
 <h2>Context API</h2>
 <h3>Declarar contexto</h3>
 <p>
-Consiste na forma de se fazer a comunicação de um componente isolado para outro. Para isso , precisamos criar um contexto em um arquivo separado como mosta abaixo. Context API é um meo muito útil de resolver a maioria dos problemas que precisariam de REDUX.
+Consiste na forma de se fazer a comunicação de um componente isolado para outro. Para isso , precisamos criar um contexto em um arquivo separado como mostra abaixo. Context API é um meio muito útil de resolver a maioria dos problemas que precisariam de REDUX.
 </p>
 <img src="./moveit-next/README_ASSETS/declarar_context.png" width="100%">
 <h3>Disponibilizar contexto globalmente</h3>
