@@ -18,7 +18,7 @@ export function CountDownProvider({children}:CountDownProviderProps){
     const {startNewChallenge}=useContext(ChallengesContext); 
     const [isActive ,setIsActive] = useState(false);
     const [hasFinished, sethasFinished] = useState(false);
-    const [time ,setTime] = useState(0.05*60); // tempo em minutos
+    const [time ,setTime] = useState(25*60); // tempo em minutos
     const minutes=Math.floor(time/60);//arredondar para baixo
     const seconds=Math.floor(time%60);
     function startCountDown(){
