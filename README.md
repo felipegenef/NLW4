@@ -315,3 +315,60 @@ Para conseguirmos carregar informações da pagina, vamos utilizar de uma ferram
 <img src="./moveit-next/README_ASSETS/rest.png" width="100%">
 <h2>LevelUp Modal</h2>
 <img src="./moveit-next/README_ASSETS/levelUpModal.png" width="100%">
+<h2>Deploy</h2>
+<p>
+Por fim, para darmos deploy em nossa aplicação utilizamos a <strong>Vercel</strong>. A vercel é a empresa criadora do Next e por isso possui muitos facilitadores para esse framework.
+</p>
+<h3>Adicionar Vercel CLI</h3>
+<ul>
+<li>
+Comando para adicionar a Vercel CLI é :  
+</li>
+<br/>
+<p>
+<strong>npm i -g vercel</strong>
+</p>
+</ul>
+<h3>Login</h3>
+<p>
+Uma vez criada sua conta no site da Vercel, digite o seguinte comando abaixo e verifique seu email para poder subir sua aplicação.
+</p>
+<ul>
+<li>
+Comando para fazer loguin na Vercel CLI :  
+</li>
+<br/>
+<p>
+<strong>vercel login</strong>
+</p>
+</ul>
+<h3>Deploy pelo CLI</h3>
+<p>
+Após terminar todos os passos acima, é só entrar na pasta de seu projeto e rodar o comando:
+</p>
+<ul>
+<li>
+Comando para fazer deploy pela primeira vez:  
+</li>
+<br/>
+<p>
+<strong>vercel</strong>
+</p>
+</ul>
+<h3>Deploy em produção</h3>
+<p>
+Uma vez que seu app esteja em produção, quando você subir novamente sua aplicação, a Vercel  cuidará para que enquanto uma aplicação executa o build, a outra se mantenha no ar sem atrapalhar a interação com o usuário final.
+</p>
+<ul>
+<li>
+Comando para fazer deploy em produção:  
+</li>
+<br/>
+<p>
+<strong>vercel --prod</strong>
+</p>
+</ul>
+<h2>Considerações finais do curso</h2>
+<p>
+Gostei muito da dinâmica do curso, com bastante prática e vários exemplos de funcionabilidades e tecnologias novas do mercado. Acredito que com essa pequena apostila em forma de documentação qualquer um poderá se aprofundar, mesmo que um pouco na "stack React Next". Recomendo a todos que puderem participar de futuros eventos que o façam. O contato com a comunidade e a troca de conhecimentos geradas no NLW são experiências únicas.
+</p>
