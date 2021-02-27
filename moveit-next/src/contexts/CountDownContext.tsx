@@ -24,6 +24,7 @@ export function CountDownProvider({children}:CountDownProviderProps){
     function startCountDown(){
         setIsActive(true);
     }
+    
      //variavel para administrar os timeouts
      let countDownTimeOut:NodeJS.Timeout;
     function resetCountDown(){
