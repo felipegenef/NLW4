@@ -247,3 +247,71 @@ Para mostrar notificação.
 <img src="./moveit-next/README_ASSETS/show_notification.png" width="100%">
 <h3>Audio</h3>
 <img src="./moveit-next/README_ASSETS/audio.png" width="100%">
+<h1>Aula 5</h1>
+<h2>Storage</h2>
+<h3>Local Storage</h3>
+<p>
+Storage baseado em <strong>chave e valor e em texto</strong>. Esse storage se mantém mesmo após dar refresh na página.
+</p>
+<h3>Session Storage</h3>
+<p>
+Storage similar ao Local storage, porém <strong>perde seus dados ao finalizar a sessão</strong>(fechar browser ou reiniciar o pc).
+</p>
+<h3>IndexDB e webSQL</h3>
+<p>
+Storages locais similares a um SQLite.
+</p>
+<h3>Cookies</h3>
+<p>
+Uma das formas mais antigas de se armazenar dados, muito similar ao localStorage, com algumas funcionabilidades a mais. Dentre elas existem as de salvar  informações para um domínio apenas, a de informar quando essa informação expira e a de limitar para httpOnly ou secure(https only).
+</p>
+<img src="./moveit-next/README_ASSETS/save_cookies.png" width="100%">
+<h2>Adicionando cookies</h2>
+<ul>
+<li>
+Comando para adicionar a biblioteca de cookies pelo <strong>YARN</strong> é :  
+</li>
+<br/>
+<p>
+<strong>yarn add js-cookie</strong>
+</p>
+<li>
+Comando para adicionar a biblioteca de cookies pelo <strong>NPM</strong> é :  
+</li>
+<br/>
+<p>
+<strong>npm i js-cookie</strong>
+</p>
+</ul>
+<h3>DefinitelyTyped</h3>
+<p>
+Quando uma biblioteca não vem com a tipagem do typescript, geralmente procuramos dentro do repositório <strong>definitelyTyped</strong> uma especie de plugin que disponibilize as tipagens.
+</p>
+<img src="./moveit-next/README_ASSETS/typed_cookies.png" width="100%">
+<ul>
+<li>
+Comando para adicionar a biblioteca de types pelo <strong>YARN</strong> é :  
+</li>
+<br/>
+<p>
+<strong>yarn add @types/js-cookie -D</strong>
+</p>
+<li>
+Comando para adicionar a biblioteca de types pelo <strong>NPM</strong> é :  
+</li>
+<br/>
+<p>
+<strong>npm i @types/js-cookie -D</strong>
+</p>
+</ul>
+<h2>GetServerSideProps</h2>
+<p>
+Para conseguirmos carregar informações da pagina, vamos utilizar de uma ferramenta do next chamada <strong>GetServerSideProps</strong>. Essa função torna aquela página uma página de <strong>SSR</strong>, fazendo assim, com que todo dentro dessa função seja feita no lado do servidor e entregue como propriedades da página.
+</p>
+<img src="./moveit-next/README_ASSETS/getServerSideProps.png" width="100%">
+<h3>Recebendo as props</h3>
+<img src="./moveit-next/README_ASSETS/home_props.png" width="100%">
+<h3>Setando as props no context</h3>
+<img src="./moveit-next/README_ASSETS/rest.png" width="100%">
+<h2>LevelUp Modal</h2>
+<img src="./moveit-next/README_ASSETS/levelUpModal.png" width="100%">
